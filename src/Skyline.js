@@ -1,6 +1,11 @@
 function Skyline(){
-
+	this.input;
 }
 
-Skyline.prototype.AddInput = function(start, height, end) {
+Skyline.prototype.AddBuilding = function(start, height, end) {
+	this.input = [start, height, end];
+};
+
+Skyline.prototype.GetSkyline = function(){
+	return this.input;
 };

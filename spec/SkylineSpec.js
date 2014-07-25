@@ -1,12 +1,20 @@
 describe("Skyline", function(){
+	var skyline;
+	beforeEach(function(){
+		skyline = new Skyline();
+	});
+
 	it("should create an object", function(){
-		var skyline = new Skyline();
+		expect(skyline).toBeTruthy();
 		//skyline = system / subject under test
 	});
-	it("Call function object", function(){
-		var skyline = new Skyline();
-		skyline.AddInput(1,11,5);
+	it("should accept a single building", function(){
+		skyline.AddBuilding(1,11,5);
+		expect(skyline.GetSkyline()).toEqual([1,11,5]);
 	});
+
+	//AAA
+	//Arrange - Act - Assert
 });
 
 // margarita, edwin, alvaro
